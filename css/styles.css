@@ -199,20 +199,40 @@ body {
     padding: 94px 0;
 }
 
+.item {
+    width: 270px;
+    background: var(--white-color);
+}
+
+.item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .team {
     padding: 94px 0;
 }
 
-.section-title {
-    margin-top: 0;
-    margin-bottom: 50px;
+.team .item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+/*особенности*/
+
+.peculiarities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    width: 270px;
+    height: 120px;
+    align-items: center;
 
     color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
+    background: #F5F4FA;
+    border-radius: 4px;
+    background-size: contain;
 }
 
 .section-heading {
@@ -237,9 +257,61 @@ body {
     color: var(--primery-text-color);
 }
 
-.modifier {
+/*чем мы занимаемся*/
+
+.presentation {
     padding-top: 0;
 }
+
+.section-photo .item {
+    width: 370px;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.item-imeg {
+    position: relative;
+}
+
+.presentation-text {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 70px;
+
+    bottom: 0;
+    left: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+    background: rgba(47, 48, 58, 0.8);
+}
+
+/*наша команда*/
 
 .section-subtitle {
     margin-top: 0;
@@ -267,49 +339,6 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-.img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.item {
-    width: 270px;
-    background: var(--white-color);
-}
-
-.item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.team .item {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.section-photo .item {
-    width: 370px;
-}
-
-
-.peculiarities {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-
-    width: 270px;
-    height: 120px;
-    align-items: center;
-
-    color: var(--title-text-color);
-    background: #F5F4FA;
-    border-radius: 4px;
-    background-size: contain;
-}
-
-/* Наша команда */
 
 .team {
     padding-top: 94px;
@@ -398,6 +427,7 @@ p {
 }
 
 /* footer */
+
 .page-footer {
     display: flex;
     padding-top: 60px;
